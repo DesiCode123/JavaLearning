@@ -1,23 +1,26 @@
 package StarsPractice.uke1;
 
 import java.util.Scanner;
-import java.util.SortedMap;
 
-public class CountWord{
+public class CountWord {
     public static void main(String[] args) {
-        System.out.println("Kan du skrive en settning");
+        System.out.println("Skriv in en senting du vil telle ordene for:");
         Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine().trim();
+        String userInput = sc.nextLine();
+        int wordCount = countWords(userInput);
+        System.out.println("Antall ord i setningen er: " + wordCount);
 
-
-        int coutWord = 1;
-            for(int i = 0;i <input.length();i++){
-                char ch = input.charAt(i);
-                if(ch== ' '){
-                    coutWord++;
-                }
-
-        }
-        System.out.println(coutWord);
     }
+
+    public static int countWords(String input) {
+        int count = 1;
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+            if (ch == ' ') {
+                count++;
+            }
+        }
+        return count;
+    }
+
 }

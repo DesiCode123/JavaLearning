@@ -2,7 +2,7 @@ package StarsPractice.Polymorf;
 
 public class Employee {
 
-    /*
+    /*compliletime polymorfisem
      * Constructor chaining: The parent constructor will be called first, before the
      * child constructor when creating the object of the child class.
      * If the parent class has multiple constructors and you want to direct to a

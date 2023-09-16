@@ -39,3 +39,23 @@ class TournamenWinner {
     }
 }
 
+/*{
+  "competitions": [
+    ["HTML", "Java"],
+    ["Java", "Python"],
+    ["Python", "HTML"]
+  ],
+  "results": [0, 1, 1]
+}
+Test Case 3
+{
+  "competitions": [
+    ["HTML", "Java"],
+    ["Java", "Python"],
+    ["Python", "HTML"],
+    ["C#", "Python"],
+    ["Java", "C#"],
+    ["C#", "HTML"]
+  ],
+  "results": [0, 1, 1, 1, 0, 1]
+}
